@@ -2,4 +2,10 @@
     <string name="app_name">Calculadora</string>
     <string name="app_title">Calculadora</string>
     <string name="calc_result">Resultado</string>
+    <string name="calc_hint">Digite um número</string>
+    <string name="op_sum">Somar</string>
+    <string name="op_minus">Subtrair</string>
+    <string name="op_multiply">Multiplicar</string>
+    <string name="op_divide">Dividir</string>
+    <string name="btn_calculate">Calcular</string>
 </resources>

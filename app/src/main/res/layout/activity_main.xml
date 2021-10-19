@@ -8,54 +8,102 @@
 
     <TextView
         android:id="@+id/app_title"
-        android:text="@string/app_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#191919"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintStart_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/result"
-        android:text="@string/calc_result"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/calc_result"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#191919"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/app_title"
+        app:layout_constraintTop_toBottomOf="@+id/app_title" />
 
     <TextView
         android:id="@+id/calc_result"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/result"
+        app:layout_constraintTop_toBottomOf="@+id/result"/>
 
     <EditText
         android:id="@+id/calc_number1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/calc_hint"
+        android:hintTextColor="#757575"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/app_title"
+        app:layout_constraintTop_toBottomOf="@+id/app_title"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck"
+        android:importantForAutofill="no" />
+
     <EditText
         android:id="@+id/calc_number2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/calc_hint"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/calc_number1"
+        app:layout_constraintTop_toBottomOf="@+id/calc_number1"
+        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck"
+        android:importantForAutofill="no" />
 
     <RadioGroup
         android:id="@+id/calc_options"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:checkedButton="@id/sum"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="@id/calc_number2"
+        app:layout_constraintTop_toBottomOf="@+id/calc_number2">
 
         <RadioButton
             android:id="@+id/sum"
+            android:text="@string/op_sum"
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
 
         <RadioButton
+            android:id="@+id/minus"
+            android:text="@string/op_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <RadioButton
+            android:id="@+id/multiply"
+            android:text="@string/op_multiply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <RadioButton
+            android:id="@+id/divide"
+            android:text="@string/op_divide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </RadioGroup>
+
+    <Button
+        android:id="@+id/calc_button"
+        android:text="@string/btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/calc_options"
+        app:layout_constraintTop_toBottomOf="@+id/calc_options"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
