@@ -2,6 +2,7 @@ package com.example.calculadora
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.calculadora.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -38,6 +39,11 @@ class MainActivity : AppCompatActivity() {
             R.id.multiply -> multiply(calc_n1, calc_n2)
             else -> divide(calc_n1, calc_n2)
         }
+
+        //mensagem de sucesso no calculo
+        Toast.makeText(applicationContext,
+            "Sucesso!",
+            Toast.LENGTH_SHORT).show()
 
         //armazena na propriedade text o resultado da operação
         binding.calcResult.text = calculateResult.toString()
