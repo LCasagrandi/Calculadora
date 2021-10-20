@@ -46,11 +46,11 @@
 
     <EditText
         android:id="@+id/calc_number1"
+        android:text=""
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="@string/calc_hint"
-        android:hintTextColor="#757575"
         android:importantForAutofill="no"
         android:inputType="number"
         android:minHeight="48dp"
@@ -60,6 +60,7 @@
 
     <EditText
         android:id="@+id/calc_number2"
+        android:text=""
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:hint="@string/calc_hint"
@@ -112,5 +113,5 @@
         android:layout_marginTop="16dp"
         android:text="@string/btn_calculate"
         app:layout_constraintStart_toStartOf="@+id/calc_options"
-        app:layout_constraintTop_toBottomOf="@+id/calc_options" />
+        app:layout_constraintTop_toBottomOf="@+id/calc_options"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

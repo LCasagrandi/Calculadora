@@ -1,0 +1,29 @@
+[33mcommit d52c9761f3102e524f7a52a35149cfa9ee17d2a7[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: LCasagrandi <leonardocsgr@gmail.com>
+Date:   Tue Oct 19 22:05:07 2021 -0300
+
+    git commit -m
+
+[33mcommit 8d305af72250181a6be36573efc6a74c77351c33[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: LCasagrandi <leonardocsgr@gmail.com>
+Date:   Tue Oct 19 17:18:49 2021 -0300
+
+    Ajustes layout
+
+[33mcommit b028a7f99865efa49cae0c18cc1a80e6b6f2989d[m
+Author: LCasagrandi <leonardocsgr@gmail.com>
+Date:   Tue Oct 19 16:38:21 2021 -0300
+
+    Constraint Layout programado
+
+[33mcommit 68862e4ea6bf1361772131c149d2920078223390[m
+Author: LCasagrandi <leonardocsgr@gmail.com>
+Date:   Mon Oct 11 15:55:39 2021 -0300
+
+    Adição dos elementos & view binding
+
+[33mcommit 263028d435f7180a2bc083dad3dec576fee03f5c[m
+Author: LCasagrandi <leonardocsgr@gmail.com>
+Date:   Mon Oct 11 11:02:11 2021 -0300
+
+    Primeiro commit
